@@ -2,6 +2,9 @@ name: etheros-server
 description: My server OS image, derived from uCore (Fedora CoreOS with batteries included)
 base-image: ghcr.io/ublue-os/ucore
 image-version: latest
+platforms:
+  - linux/amd64
+  - linux/arm64
 modules:
   - type: files
     files:

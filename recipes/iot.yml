@@ -1,0 +1,15 @@
+name: etheros-iot
+description: My IoT OS image, derived from uCore (Fedora CoreOS with batteries included)
+base-image: ghcr.io/ublue-os/ucore-minimal
+image-version: latest
+platforms:
+  - linux/amd64
+  - linux/arm64
+modules:
+  - type: files
+    files:
+      - source: system
+        destination: /
+  - type: script
+    scripts:
+      - 01-system-fixups.sh

@@ -5,3 +5,8 @@ image-version: latest
 platforms:
   - linux/amd64
   - linux/arm64
+modules:
+  - type: files
+    files:
+      - source: system
+        destination: /

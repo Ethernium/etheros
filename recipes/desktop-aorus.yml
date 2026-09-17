@@ -7,7 +7,7 @@ base-image: ghcr.io/ublue-os/bluefin-dx-nvidia
 image-version: latest
 alt-tags:
   - aorus
-  
+
 
 modules:
   - type: rpm-ostree

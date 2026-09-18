@@ -10,6 +10,3 @@ modules:
     files:
       - source: system
         destination: /
-  - type: script
-    scripts:
-      - 01-system-fixups.sh
